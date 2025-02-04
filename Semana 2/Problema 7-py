@@ -1,0 +1,18 @@
+print("Este codigo muestra si tu numero ingresaado es par impar, y su multiplo")
+x=int(input("ingrese un numero: "))
+n = 2 #un numero primo es aquel que solo sea divisible entre 1 y si mismo}
+r = 1 # variable para terminar el ciclo
+if x % 2 == 0: #checa si el residuo del numero ingresado entre 2 no deja residuo, lo que significaria que es par 
+    print("es par")
+else:
+    print("es impar") 
+while  x >= r: 
+        if n >= x: 
+         print("Es primo")
+         r=x+1  #pensaba hacer que sumara 1 cada que terminara un ciclo, pero, se repetiria hasta que sea mayor a x, entonces si un numero es primo, se repetiria infinitamente
+        elif x % n != 0: # % es "MOD" checa el residuo, si es diferente a 0 suma n+1
+            n=n+1
+        else:
+            print(n, "es multiplo")
+            r=x+1
+#reuse el codigo del problema 5 para sacar os multiplos 
